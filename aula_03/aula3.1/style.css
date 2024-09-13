@@ -1,0 +1,31 @@
+a {
+    text-decoration: none;
+    font-family: "Gill Sans";
+    margin: 15px;
+}
+
+header {
+    text-align: left;
+    background-color: rgb(207, 171, 240);
+}
+
+header h1 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+.ArticleDanger {
+    background-color: aqua;
+    padding: 10px;
+}
+
+body {
+    background-color: coral;
+}
+
+#Read {
+    font-family: 'Courier New', Courier, monospace;
+}
