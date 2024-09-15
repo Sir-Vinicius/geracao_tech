@@ -1,0 +1,36 @@
+header {
+    margin-bottom: 15px;
+}
+
+form label,
+form input,
+form select,
+form button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+form button {
+    color : white;
+    background-color: green;
+    border: 0;
+    height: 30px;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 5px;
+}
+
+form {
+    width: 300px;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #f1efef;
+    border: 1px solid rgb(173, 172, 172);
+}
