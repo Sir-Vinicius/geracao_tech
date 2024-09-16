@@ -4,8 +4,35 @@ main a {
     margin: 15px;
 }
 
-header a {
+header {
+    text-align: center;
+    background-color: #386cf0;
+    color: white;
     text-decoration: none;
     font-family: "Gill Sans";
     margin: 15px;
+    padding: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+header p {
+    text-align: center;
+}
+
+main{
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 100px;
+    background-color: black;
+    color: white;
 }
