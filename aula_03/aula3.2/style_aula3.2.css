@@ -34,3 +34,23 @@ form {
     background-color: #f1efef;
     border: 1px solid rgb(173, 172, 172);
 }
+
+header {
+    text-align: center;
+    background-color: #386cf0;
+    color: white;
+    text-decoration: none;
+    font-family: "Gill Sans";
+    margin: 15px;
+    padding: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+header p {
+    text-align: center;
+}
