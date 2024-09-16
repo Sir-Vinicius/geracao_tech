@@ -14,3 +14,19 @@ html {
 h1, h2, h3, h4, h5, h6{
     text-align: center;
   }
+
+header {
+  text-align: center;
+  background-color: #386cf0;
+  color: white;
+  text-decoration: none;
+  font-family: "Gill Sans";
+  margin: 15px;
+  padding: 10px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
