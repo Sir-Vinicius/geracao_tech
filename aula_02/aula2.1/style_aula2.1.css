@@ -17,8 +17,6 @@ h1, h2, h3, h4, h5, h6{
 
 header {
   text-align: center;
-  background-color: #386cf0;
-  color: white;
   text-decoration: none;
   font-family: "Gill Sans";
   margin: 15px;
@@ -27,6 +25,6 @@ header {
 
 header a {
   text-decoration: none;
-  color: white;
+  color: black;
   padding: 10px;
 }
