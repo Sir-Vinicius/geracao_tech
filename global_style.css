@@ -4,6 +4,12 @@ main a {
     margin: 15px;
 }
 
+body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
 header {
     text-align: center;
     background-color: #386cf0;
@@ -12,6 +18,7 @@ header {
     font-family: "Gill Sans";
     margin: 15px;
     padding: 10px;
+    position: relative;
 }
 
 header a {
