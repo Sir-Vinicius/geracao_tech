@@ -16,3 +16,7 @@
 block, inline, inline-block e none.
 #### Position:
 Relative, static, absolute e fixed.
+
+## Aula 7
+### Aula 7.1
+flex-direction, flex-wrap
