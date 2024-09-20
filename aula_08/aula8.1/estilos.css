@@ -1,0 +1,73 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  header{
+    text-align: center;
+    background-color: #ff5722;
+    color: white;
+    padding: 10px;;
+  }
+  header nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+  }
+  article{
+    background-color: white;
+    padding: 10px;
+    width: 400px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 30px;
+  }
+  article img{
+    border-radius: 10px;
+    margin: 10px;
+  }
+  footer{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+  }
+  main h2{
+    text-align: center;
+  }
+
+  /* tamanha para dispositivos muito pequenos*/
+  @media(max-width: 600px) {
+    body {
+        /* background-color: blue; */
+    }
+  }
+
+  /* Tamanho de tela de despositivos pequenos*/
+  @media(min-width: 600px) {
+    
+  }
+  
+  @media(max-width: 768px) {
+  
+  }
+
+  
+  @media(max-width: 992px) {
+  
+  }
+  
+  @media(max-width: 1200px) {
+  
+  }
+
+  @media(max-width: 600px) and (orientation: p){
+    body {
+        background-color: blue;
+    }
+    header {
+       width: 100%; 
+    }
+  }

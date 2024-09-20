@@ -38,9 +38,10 @@ header {
 }
 
 .logo {
-    font-size: 1.8rem;
-    letter-spacing: 0.4rem;
     cursor: pointer;
+    width: 7%;
+    margin-left: 30px;
+    margin-bottom: 25px;
 }
 
 .menu .lista-menu {
@@ -75,8 +76,9 @@ header {
 }
 
 main {
-    height: 80vh;
+    height: 120vh;
     display: flex;
+    flex-direction: column ;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -89,6 +91,45 @@ main {
     align-items: center;
     color: rgb(255, 300, 300);
     font-size: 20px;
+}
+
+.div-cards {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    align-items: center;
+    & img {
+        width: 100%;
+        height: 80%;
+        border-radius: 10px;
+    }
+    & h1 {
+        padding: 15px;
+    }
+    & p {
+        text-align: center;
+        font-size: 14px;
+    }
+    & button {
+        width: 100px;
+        padding: 10px;
+        background-color: #c7b701;
+        font-size: 14px;
+        color: white;
+        border-radius: 10px;
+        
+    }
+
 }
 
 footer {
@@ -106,4 +147,40 @@ footer {
     margin: 0 auto;
     margin-bottom: 0;
     padding: 20px;
+}
+
+.footer-form, .footer-contact {
+    flex: 1;
+    margin: 0 100px;
+}
+
+.footer-form h3, .footer-contact h3 {
+    margin-bottom: 10px;
+}
+
+.footer-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-form label {
+    margin-bottom: 5px;
+}
+
+.footer-form input {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1.4rem;
+}
+
+.footer-form button {
+    padding: 10px;
+    font-size: 1.6rem;
+    background-color: yellow;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
 }
