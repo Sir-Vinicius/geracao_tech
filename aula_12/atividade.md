@@ -1,33 +1,29 @@
-9. Faça um script para o cálculo de uma folha de pagamento, sabendo que os descontos são do Imposto de Renda, que depende do salário bruto (conforme tabela abaixo), 10% para o INSS e que o FGTS corresponde a 11% do Salário Bruto, mas não é descontado (é a empresa que deposita). O Salário Líquido corresponde ao Salário Bruto menos os descontos. O script deverá pedir ao usuário o valor da sua hora e a quantidade de horas trabalhadas no mês.
+# Cálculo de Folha de Pagamento
 
-Desconto do IR:
+Este script realiza o cálculo da folha de pagamento, considerando os seguintes descontos:
 
-Salário Bruto até 900 (inclusive) (inclusive) Salário Bruto até 1500 (inclusive) isento desconto de 5%
+- **Imposto de Renda (IR)**: depende do salário bruto conforme a tabela abaixo.
+- **INSS**: 10% do salário bruto.
+- **FGTS**: 11% do salário bruto (não é descontado do salário, mas depositado pela empresa).
 
-Salário Bruto até 2500 (inclusive) desconto de 10%
+## Desconto do IR
 
-Salário Bruto acima de 2500 exemplo abaixo. desconto de 20% Imprima na tela as informações, dispostas conforme o
+- Salário Bruto até R$ 900,00: isento
+- Salário Bruto de R$ 901,00 até R$ 1500,00: 5%
+- Salário Bruto de R$ 1501,00 até R$ 2500,00: 10%
+- Salário Bruto acima de R$ 2500,00: 20%
 
-No exemplo o valor da hora é 5 e a quantidade de hora é 220. :
+## Instruções
 
-Salário Bruto: (5 * 220)
+O script solicitará ao usuário o valor da hora e a quantidade de horas trabalhadas no mês. A seguir, as informações serão apresentadas no formato:
 
-R$ 1100,00
+### Exemplo
 
-IR (5%) (-) INSS (10%)
+Se o valor da hora for R$ 5,00 e a quantidade de horas trabalhadas for 220:
 
-: R$ 55,00
-
-FGTS (11%)
-
-: R$ 110,00
-
-: R$ 121,00
-
-Total de descontos
-
-: R$ 165,00
-
-Salário Liquido
-
-: R$ 935,001
+- **Salário Bruto**: R$ 1100,00 (5 * 220)
+- **Descontos**:
+  - IR (5%): R$ 55,00
+  - INSS (10%): R$ 110,00
+- **Total de Descontos**: R$ 165,00
+- **Salário Líquido**: R$ 935,00
