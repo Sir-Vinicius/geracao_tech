@@ -1,0 +1,13 @@
+.novoCard {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #252525;
+    color: #fff;
+}
+
+.CardVermelho {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #252525;
+    color: #ff0000;
+}

@@ -1,0 +1,64 @@
+.buttonDiv {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #252525;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+    & #button-head {
+        color: red;
+    }
+}
+
+header {
+    background-color: purple;
+    .menu {
+        text-transform: uppercase;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .logo {
+        cursor: pointer;
+        width: 7%;
+        margin-left: 30px;
+        margin-bottom: 25px;
+    }
+
+    .menu .lista-menu {
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .menu .lista-menu a {
+        text-decoration: none;
+        color: white;
+        padding: 15px;
+        transition: 2ms ease-in;
+        position: relative;
+    }
+
+    .menu .lista-menu a::before {
+        content: ' ';
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 0px;
+        height: 2px;
+        background-color: wheat;
+        transition: all 1s ease;
+    }
+
+    .menu .lista-menu a:hover:before {
+    width: 100%;
+    background-color: yellow;
+    }
+}
