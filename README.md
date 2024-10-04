@@ -4,6 +4,10 @@
 
 [Dontpad](https://dontpad.com/gt-07/)
 
+#### Color Hunt | Adobe Color (para pegar conjunto de cores)
+#### Penpot
+#### flutterflow
+
 ## aula 02
 
 ## aula 03
