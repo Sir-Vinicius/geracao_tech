@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel, Tesoura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo: Pedra, Papel, Tesoura</h1>
+
+        <div class="scoreboard">
+            <div class="score">
+                <h2>Player</h2>
+                <p id="player-score">0</p>
+            </div>
+            <div class="score">
+                <h2>Máquina</h2>
+                <p id="computer-score">0</p>
+            </div>
+        </div>
+
+        <div class="options">
+            <img src="images/rock.png" alt="Pedra" id="rock" class="choice">
+            <img src="images/paper.png" alt="Papel" id="paper" class="choice">
+            <img src="images/scissors.png" alt="Tesoura" id="scissors" class="choice">
+        </div>
+
+        <div class="computer-choice">
+            <h2>Escolha da Máquina:</h2>
+            <img id="computer-choice-img" src="images/default.png" alt="Escolha da Máquina">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

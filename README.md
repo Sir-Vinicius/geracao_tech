@@ -8,3 +8,8 @@
 #### Color Hunt | Adobe Color (para pegar conjunto de cores)
 #### Penpot
 #### flutterflow
+
+## Link dos Diretórios de Imagens:
+#### - https://storyset.com/  (*)
+#### - https://undraw.co/illustrations
+#### - https://www.pexels.com/pt-br/
