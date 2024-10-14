@@ -6,15 +6,17 @@ function checkGuess() {
     const userGuess = document.getElementById('userGuess').value;
     const message = document.getElementById('message');
 
-    if (userGuess === '' || isNaN(userGuess)) {
-        message.textContent = 'Por favor, insira um número válido.';
+    if (userGuess === '' || isNaN(userGuess) || userGuess < 1 || userGuess > 50) {
+        message.textContent = 'Insira um número válido entre 1 e 50, você perdeu uma chance. Muahaha.';
+        chances--;
+        document.getElementById('chances').innerText = chances;
         return;
     }
 
     const guess = Number(userGuess);
 
     if (guess === randomNumber) {
-        message.textContent = `Parabéns! Você acertou o número ${randomNumber}.`;
+        message.textContent = `Que sortudo! Você acertou o número ${randomNumber}.`;
         message.style.color = 'green';
         document.getElementById('userGuess').disabled = true;
     } else {
@@ -22,7 +24,7 @@ function checkGuess() {
         document.getElementById('chances').innerText = chances;
 
         if (chances === 0) {
-            message.textContent = `Suas chances acabaram! O número correto era ${randomNumber}.`;
+            message.textContent = `Suas chances acabaram! O número correto era ${randomNumber}. MORRAAA!!🔪🔫`;
             message.style.color = 'red';
             document.getElementById('userGuess').disabled = true;
         } else {
