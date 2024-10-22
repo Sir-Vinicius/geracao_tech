@@ -9,6 +9,7 @@ import Header from './components/Header';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import HomePage from './pages/HomePage';
 import Login from './pages/Login';
+import ListaDeTenis from './components/Products';
 
 // const saldo = 10
 // const saldo2 = 12
@@ -28,6 +29,7 @@ function App() {
           </Routes>
         </div>
       </Router>
+      <ListaDeTenis limit={8}/>
 
       {/* '<Header></Header>
       '<Saudacao nome="Fulano" saldo={saldo}></Saudacao>
