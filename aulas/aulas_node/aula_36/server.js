@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const PORT = 3000
 const produtos = require('./src/mocs/sneakersList');
-const animeController = require('./src/controllers/animeControllers')
+const animeController = require('./src/controllers/animeControllers');
+const { JsonWebTokenError } = require('jsonwebtoken');
 app.use(express.json())
 
 app.get('/', (req, res) => {
@@ -56,6 +57,34 @@ app.put('/animes/:id', animeController.updateAnime);
 
 app.delete('/animes/:id', animeController.deleteAnimeById);
 
-app.listen(PORT, () => {
-    console.log(`O servidor está rodando na porta http://localhost:${PORT}`)
-});
+// Importando JWT
+const jwt = require('jsonwebtoken')
+// Criando Token assinado
+const token = jwt.sign({id: 15, name: 'Vinicius'}, 'f23mi%T2')
+// Exibindo token
+console.log(token)
+
+const jwtVerify = (tokenUSer) => {
+    try{
+        const decoded = jwt.verify(tokenUSer, 'f23mi%T2')
+        return decoded
+    } catch (error){
+        console.log(`Deu ruim! ${error}`)
+    }
+}
+
+console.log(jwtVerify(token))
+
+app.post('login/', (req, res) => {
+    const { email, password } = req.body
+    const user = users.find(user => user.email === email && user.password === password)
+    if (user) {
+        const token = jwt.sign({ id: user.id, name: user.name }, 'f23mi%T2')
+        res.json({ token })
+    }
+})
+
+
+// app.listen(PORT, () => {
+//     console.log(`O servidor está rodando na porta http://localhost:${PORT}`)
+// });
