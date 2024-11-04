@@ -1,4 +1,4 @@
-const produtos = require('../mocs/sneakersList')
+const produtos = require('../mocks/sneakersList')
 
 function getsneakers (req, res) {
     try{

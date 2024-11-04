@@ -1,4 +1,4 @@
-const ListaAnimes = require('../mocs/animeList')
+const ListaAnimes = require('../mocks/animeList')
 
 function getAllAnimes (req, res) {
     res.send(ListaAnimes)
