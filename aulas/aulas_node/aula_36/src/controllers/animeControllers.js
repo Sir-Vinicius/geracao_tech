@@ -76,11 +76,7 @@ function  deleteAnimeById (req, res) {
     const {id} = req.params;
     const animeIndex = ListaAnimes.findIndex(anime => anime.id === Number(id));
 
-    if(!animeIndex ===  -1) {
-        return res.send({mensage: '🔴 Anime não encontrado! 😰'})
-    }
-
-    ListaAnimes.splice(animeIndex, 1);
+    ListaAnimes.splice(animeIndex, 1); // splice é o método que remove um item da lista (array).
     res.send('🟢 Anime deletado com sucesso! ❌')
 }
 

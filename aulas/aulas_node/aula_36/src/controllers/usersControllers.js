@@ -8,18 +8,24 @@ const userCreate = async (req, res) => {
     // Criptografia da senha enviada no body
     const saltRounds = 10;
     const senhaHast = await bcrypt.hash(senha, saltRounds);
-
     // Criando um novo usuário
-    const newUser = await usersModel.create({   
-        first_name: nome,
-        surname: sobrenome,
-        email: email,
-        password: senha
-    });
-    // Resposta da requisição
-    res.status(201).send({
-        message: `🟢 Usuário ${newUser.first_name}, ID: ${newUser.id} criado com sucesso!`
-    });
+    try {
+        const newUser = await usersModel.create({   
+            first_name: nome,
+            surname: sobrenome,
+            email: email,
+            password: senha
+        });
+        // Resposta da requisição
+        res.status(201).send({
+            message: `🟢 Usuário ${newUser.first_name}, ID: ${newUser.id} criado com sucesso!`
+        });
+    } catch (error) {
+        res.status(400).send({
+            // Captura de erros para o lado do servidor
+            message: `❌ Erro ao criar usuário: ${error.message}`
+        });
+    }
 };
 
 const usersGetAll = async (req, res) => {
@@ -29,7 +35,7 @@ const usersGetAll = async (req, res) => {
 
     } catch (error) {
         res.send({
-            message: 'Erro ao listar os usuários!'
+            message: `❌ Erro ao listar os usuários! Erro: ${error}`
         })
     }
 };
